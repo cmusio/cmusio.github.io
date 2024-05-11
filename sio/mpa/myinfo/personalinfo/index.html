@@ -1,0 +1,1106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EXR1GJJ46"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-4EXR1GJJ46');
+    </script>
+    <!-- Base meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CMU Student Information Online</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/sio/sio/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/sio/sio/images/favicon.ico"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+          rel="stylesheet">
+
+    <link id="bootstrap-css-link" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+    >
+    <meta name="bootstrap-css-link-fallback-test" content="" class="sr-only" />
+
+    <script type="text/javascript">
+        var testElement = document.querySelector('meta[name="bootstrap-css-link-fallback-test"]');
+        var computedStyle = getComputedStyle(testElement).getPropertyValue("position");
+        if (computedStyle !== 'absolute') {
+            var linkTag = '<link rel="stylesheet" href="/sio/resources/css/bootstrap-4.6.0.min.css">';
+            var $cssLink = document.getElementById("bootstrap-css-link");
+            document.write(linkTag);
+            $cssLink.remove();
+        }
+    </script>
+
+    <link id="fa-css-link" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+            integrity="sha384-iG9HVlEkmTd8Bt9jjbQeO+g82fxWpxxBEz3PNHy2xMPwfhKN9LAWaD8d0aFBvhnl"
+            crossorigin="anonymous"
+            media="all"
+    >
+    <meta name="fa-css-link-fallback-test" content="" class="fa" />
+
+    <script type="text/javascript">
+        var testElement = document.querySelector('meta[name="fa-css-link-fallback-test"]');
+        var computedStyle = getComputedStyle(testElement).getPropertyValue("display");
+        if (computedStyle !== 'inline-block') {
+            var linkTag = '<link rel="stylesheet" href="/sio/resources/css/font-awesome-5.9.0/css/all.css">';
+            var $cssLink = document.getElementById("fa-css-link");
+            document.write(linkTag);
+            $cssLink.remove();
+        }
+    </script>
+
+    <link id="kendo-common-css-link" rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.common-bootstrap.min.css"
+            integrity="sha384-brnAahLfyUWHdtnVcGrBjE2bZARlvyOoGJeXlqvtLEX/8b2kHNqUblKManEhwgS3"
+            crossorigin="anonymous"
+            media="all"
+    >
+    <meta name="kendo-common-css-link-fallback-test" content="" class="k-loading-pdf-mask" />
+
+    <script type="text/javascript">
+        var testElement = document.querySelector('meta[name="kendo-common-css-link-fallback-test"]');
+        var computedStyle = getComputedStyle(testElement).getPropertyValue("position");
+        if (computedStyle !== 'absolute') {
+            var linkTag = '<link rel="stylesheet" href="/sio/resources/css/kendo-2020.1.219.common-bootstrap.min.css">';
+            var $cssLink = document.getElementById("kendo-common-css-link");
+            document.write(linkTag);
+            $cssLink.remove();
+        }
+    </script>
+
+    <link id="kendo-css-link" rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.bootstrap.min.css"
+            integrity="sha384-NSIG0ekV/zUkgW8mEYU0Aea8G0PzKjtlwQBLr6mEcZP4x13rtUl2wky7FHCEZ0oA"
+            crossorigin="anonymous"
+            media="all"
+    >
+    <meta name="kendo-css-link-fallback-test" content="" class="k-theme-test-class" />
+
+    <script type="text/javascript">
+        var testElement = document.querySelector('meta[name="kendo-css-link-fallback-test"]');
+        var computedStyle = getComputedStyle(testElement).getPropertyValue("opacity");
+        if (computedStyle !== '0') {
+            var linkTag = '<link rel="stylesheet" href="/sio/resources/css/kendo-2020.1.219.bootstrap.min.css">';
+            var $cssLink = document.getElementById("kendo-css-link");
+            document.write(linkTag);
+            $cssLink.remove();
+        }
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="/sio/mpa/resources/css/sio-d9ff8efaa569aa711080e2082ed701da.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+                crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            document.write("<script src='/sio/resources/js/jquery-3.5.1.min.js' type='text/javascript'><\/script>");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" type="text/javascript"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+        if (!$.fn.modal) {
+            document.write("<script src='/sio/resources/js/bootstrap-4.6.0.bundle.min.js' type='text/javascript'><\/script>");
+        }
+    </script>
+
+    <script src="https://kendo.cdn.telerik.com/2020.1.219/js/kendo.all.min.js" type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+        if (!window.kendo) {
+            document.write("<script src='/sio/resources/js/kendo-2020.1.219.all.min.js' type='text/javascript'><\/script>");
+        }
+    </script>
+
+    <script src="/sio/mpa/resources/js/modernizr-custom-436c108c5c764d189402d84e8953c1a4.js"
+            type="text/javascript"></script>
+
+    <script src="/sio/mpa/resources/js/jquery.hoverIntent.min-db954eadb8d5c1fb769afa7b26366379.js"
+            type="text/javascript"></script>
+
+    <script src="/sio/mpa/resources/js/sio-98ece9a6dedfcbefaf8ebc35e81c21b9.js" type="text/javascript"></script>
+</head>
+
+<body class="sio-student"
+      data-responsive="true"
+      data-page-id="myinfo-personalinfo"
+      data-page-track-changes="false"
+      data-page-printable="true"
+      
+>
+
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+        style="position:absolute;width:0;height:0;border:0" aria-hidden="true"></iframe>
+
+<iframe id="shibboleth_frame" style="display:none; visibility:hidden;" aria-hidden="true"></iframe>
+<div id="main-container">
+    <div id="browser-support"></div>
+    <div class="inner-container">
+        <noscript>
+            <div class="no-javascript-error">
+                This web application requires javascript. Please enable javascript on your browser
+                to proceed.
+            </div>
+        </noscript>
+
+
+
+        <div class="fixed-top navbar-default navbar-white d-print-none">
+
+            <a href="#main_content"
+               class="btn btn-link scroller d-block sr-only sr-only-focusable pb-2 pt-2 font-weight-bold">
+                Skip to Content <span class="fas fa-level-down-alt"
+                                      aria-hidden="true"></span></a>
+
+            <div class="top-header pt-0 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <header role="banner" class="col-lg px-0" aria-label="Page Header">
+                            <div class="cmu-wordmark"><h1 class="sr-only">Carnegie Mellon
+                                    University</h1>
+                                    <div class="btn-group mobile-block-menu float-right mr-2"
+                                         role="region"
+                                         aria-label="User Settings">
+                                            <button type="button"
+                                                    class="btn dropdown-toggle btn-primary"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <span id="username-mobile-menu"
+                                                      class="sio-name">Bocheng Wu</span>&nbsp;
+                                            </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="/sio/mpa/faqs"
+                                               class="btn btn-link dropdown-item">FAQ</a>
+                                            <a id="feedback-mobile-menu"
+                                               href="/sio/mpa/feedback"
+                                               class="display-block dropdown-item btn btn-link clickable-text">Feedback</a>
+                                            <a id="logout-mobile-menu"
+                                               href="/sio/mpa/logout"
+                                               class="display-block dropdown-item btn btn-link clickable-text">Logout</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </header>
+                        <div class="col-lg">
+                                <div id="user-settings-desktop" class="menu-block p-0"
+                                     role="region"
+                                     aria-label="User Settings">
+                                        <ul>
+                                            <li><span id="username"
+                                                      class="sio-name">Bocheng Wu</span><span
+                                                        id="staffname"
+                                                        class="for"> </span><span
+                                                        class="d-block d-sm-none"
+                                                        aria-hidden="true"> | </span>
+                                            </li>
+                                        </ul>
+                                    <div>
+                                        <ul>
+                                            <li><a id="faqs" href="/sio/mpa/faqs"
+                                                   class="btn btn-link">FAQ</a><span
+                                                        class="" aria-hidden="true"> | </span>
+                                            </li>
+                                            <li><a id="feedback" href="/sio/mpa/feedback"
+                                                   class="btn btn-link">Feedback</a><span
+                                                        class="" aria-hidden="true"> | </span>
+                                            </li>
+                                            <li><a id="logout" href="/sio/mpa/logout"
+                                                   class="btn btn-link">Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav role="navigation" aria-label="Main Navigation">
+                <div class="container">
+                    <div class="row">
+                            <div class="col main-nav navbar navbar-light navbar-expand-lg  p-0">
+                                <a class="navbar-brand" href="/sio/mpa/">
+                                    <span id="home">Student Information Online</span>
+                                    <span id="home-mobile">SIO</span>
+                                </a>
+                                <button type="button" class="navbar-toggler mr-2"
+                                        data-toggle="collapse"
+                                        data-target="#top_main_navigation" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                    <span class="fas fa-bars" style="color:#b00;"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse flex-row-reverse"
+                                     id="top_main_navigation">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a id="menu-item-academic-info"
+                                               class="gwt-MenuItem nav-link dropdown-toggle px-2"
+                                               href="#" data-toggle="dropdown" role="button">
+                                                Academic Info</a>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="menu-item-academic-info">
+                                                <a id="menu-item-grades-qpa"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/grades/home">
+                                                    Grades and QPA
+                                                </a>
+                                                <a id="menu-item-enrstatus"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/grades/enrollmentstatus">
+                                                    Enrollment Status
+                                                </a>
+                                                <a id="menu-item-reqverification"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/grades/verifications">
+                                                    Request Verification
+                                                </a>
+                                                <a id="menu-item-reqtranscript"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/grades/transcripts">
+                                                    Request Transcript
+                                                </a>
+                                                <a id="menu-item-graduation"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/#grades-gol">
+                                                    Graduation and Diploma
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a id="menu-item-course-schedule"
+                                               class="gwt-MenuItem nav-link dropdown-toggle px-2"
+                                               href="#"
+                                               data-toggle="dropdown" role="button">
+                                                Course Schedule</a>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="menu-item-course-schedule">
+                                                <a id="menu-item-semschedule"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/mpa/semesterschedule">Semester
+                                                    Schedule</a>
+                                                <a id="menu-item-planschedule"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#schedule-plan">Plan Course
+                                                    Schedule</a>
+                                                <a id="menu-item-registration"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#schedule-registration">Registration</a>
+                                                <a id="menu-item-waitlist"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/mpa/schedule/waitlisthistory">Waitlist
+                                                    History</a>
+                                                <a id="menu-item-dropped"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#schedule-drops">Dropped
+                                                    Courses</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a id="menu-item-finances"
+                                               class="gwt-MenuItem nav-link dropdown-toggle px-2"
+                                               href="#"
+                                               data-toggle="dropdown" role="button">
+                                                Finances</a>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="menu-item-finances">
+                                                <a id="menu-item-finances-home"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-home">Finances
+                                                    Home</a>
+                                                <a id="menu-item-accountinvoices"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-invoices">Student
+                                                    Account
+                                                    Invoices</a>
+                                                <a id="menu-item-studentaccountactivity"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/mpa/finances/accountactivity">Student
+                                                    Account
+                                                    Activity</a>
+                                                <a id="menu-item-paynow"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-paynow">Pay Now
+                                                    from
+                                                    Bank
+                                                    Account</a>
+                                                <a id="menu-item-accountlist"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/mpa/finances/bankaccounts">Bank
+                                                    Account
+                                                    List</a>
+                                                <a id="menu-item-bankaccountactivity"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-bankaccountactivity">Bank
+                                                    Account
+                                                    Activity</a>
+                                                <div role="separator"
+                                                     class="dropdown-divider"></div>
+                                                <a id="menu-item-finaidstatus"
+                                                   class="menu-item dropdown-item"
+                                                   target="_blank"
+                                                   rel="noreferrer"
+                                                   href="https://fao.andrew.cmu.edu/forms.html">
+                                                    Go to My Student Aid
+                                                </a>
+                                                <a id="menu-item-finaidperms"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-titleIVAuth">Financial
+                                                    Aid
+                                                    Permissions</a>
+                                                <a id="menu-item-fedloansummary"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-federalloansummary">Federal
+                                                    Loan
+                                                    Summary</a>
+                                                <div role="separator"
+                                                     class="dropdown-divider"></div>
+                                                <a id="menu-item-1098t"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/mpa/finances/irstuitionstatement">IRS
+                                                    Tuition
+                                                    Statement
+                                                    (1098-T)</a>
+                                                <a id="menu-item-taxableearnings"
+                                                   class="menu-item dropdown-item"
+                                                   href="/sio/#finances-taxableearnings">Taxable
+                                                    Earnings</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item"><a id="menu-item-updatemyinfo"
+                                                                class="gwt-MenuItem menu-item nav-link px-2"
+                                                                href="/sio/mpa/myinfo/personalinfo/?focusTitle=false">My
+                                                Info</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a id="menu-item-campuslife"
+                                               class="gwt-MenuItem nav-link dropdown-toggle px-2"
+                                               href="#"
+                                               class="dropdown-toggle" data-toggle="dropdown"
+                                               role="button">
+                                                Campus Life</a>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="menu-item-campuslife">
+                                                <a id="menu-item-campuslife-home"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/campuslife/home">Campus
+                                                    Life Home</a>
+                                                <a id="menu-item-housing"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/campuslife/housing">Housing
+                                                    Assignment</a>
+                                                <a id="menu-item-mealplan"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/campuslife/dining">Meal
+                                                    Plan
+                                                    Assignment</a>
+                                                <a id="menu-item-idcard"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/campuslife/idcard">ID
+                                                    Card</a>
+                                                <a id="menu-item-healthinsurance"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/campuslife/healthinsurance">Health
+                                                    Insurance</a>
+                                                <a id="menu-item-ambassador"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/#campuslife-admissionovernightambassador">Admission
+                                                    Overnight
+                                                    Ambassador</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a id="menu-item-resources"
+                                               class="gwt-MenuItem menu-item nav-link px-2 dropdown-toggle"
+                                               data-toggle="dropdown" role="button" href="#">Resources</a>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                 aria-labelledby="menu-item-resources">
+                                                <a id="menu-item-contacts"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/importantcontacts">
+                                                    Contacts
+                                                </a>
+                                                <a id="menu-item-documents"
+                                                   class="dropdown-item menu-item"
+                                                   href="/sio/mpa/documents/">
+                                                    Documents
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+            </nav>
+        </div>
+
+        <div class="content " id="main_content" role="main" aria-label="Main Content">
+            <div class="container" id="mpa">
+                    <div class="mb-3 clearfix">
+                        <h1 class="page-title d-inline d-print-none">View and Update My Info</h1>
+                            <h3 class="d-print-block d-none print-student-displayname">Bocheng Wu</h3>
+                        <div class="printIcon d-print-none">
+                            <a role="button" id="printIcon" style="display:none;" href="#"
+                               class="printBtn">Print This Page
+                                <span class="fas fa-fw fa-print" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-lg-block clearfix">
+                        <div class="main-content float-left col-lg-9">
+                                <div class="hdr-msg-wrapper screenlevel-message-panel message-panel mb-2">
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="body-content-pnl mb-2" role="alert">
+</div>
+
+<div id="my-info-panel" class="panel with-nav-tabs bsfc">
+    <div class="row no-gutters">
+        <div class="col-md-4 pic-nav-wrapper navigation-card">
+<div id="myinfo-photo-wrapper" class="user-photo-wrapper mx-auto">
+    <img class="img-fluid user-photo border-right border-bottom"
+         src="/sio/mpa/secure/imgservice/myphoto/myphoto.jpeg"
+         alt="ID Card Photo"/>
+    <div class="user-info-box">
+        <div class="user-name-box p-2 d-inline-block">Bocheng Wu</div>
+        <a class="float-right p-2" href="http://www.cmu.edu/idplus/idphotos/index.html" target="_blank">
+            <span style="color:#fff" aria-hidden="true" class="fas fa-lg fa-camera fa-fw"></span>
+            <span class="sr-only">Link to CMU ID Photo submission page.</span>
+        </a>
+    </div>
+</div>
+
+    <nav role="navigation" aria-label="View My Information Sub Menu">
+        <ul class="nav nav-tabs flex-column d-flex fa-ul m-0 ">
+                <li class="nav-item d-flex active ">
+                    <a href="/sio/mpa/myinfo/personalinfo" id="nav-item-personalinfo"
+                       class="nav-link w-100   cmu-async-on-init"
+                                        data-focus-to-selector="#myinfo-title"
+                                        data-beforefetch="beforeFetchFocusToSelectorAndAbort"
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-folder-open"></span></span>
+                        Personal Information
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/pronunciation" id="nav-item-pronunciation"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-microphone"></span></span>
+                        Pronunciation & Pronouns
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/studentidentity" id="nav-item-studentidentity"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-fingerprint"></span></span>
+                        Student Identity
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/familyfriends" id="nav-item-family"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-project-diagram"></span></span>
+                        Family & Friends
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/campusaddress" id="nav-item-campusaddress"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-map-marker-alt"></span></span>
+                        Campus Address
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/offcampusresidence" id="nav-item-offcampusresidence"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-building"></span></span>
+                        Off Campus Residence
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/permanentaddress" id="nav-item-permanentaddress"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-home"></span></span>
+                        Permanent Address
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/studentidcard" id="nav-item-cardid"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-id-card"></span></span>
+                        Student ID & Card ID
+                    </a>
+                </li>
+                <li class="nav-item d-flex  ">
+                    <a href="/sio/mpa/myinfo/socialsecurity" id="nav-item-ssn"
+                       class="nav-link w-100   "
+                    >
+                        <span class="fa-li"><span aria-hidden="true"
+                                                  class="fas fa-fw fa-hashtag"></span></span>
+                        Social Security Number
+                    </a>
+                </li>
+        </ul>
+    </nav>
+        </div>
+
+        <div class="card-body user-card flex-column m-3 m-md-0 p-0 col-md-8">
+    <div class="tab-content d-flex flex-column h-100">
+        <div id="personal-information-tab" class="tabPanel h-100" role="tabpanel">
+            <div class="d-flex h-100 flex-column">
+                <div class="card h-100 bg-content outer-card-no-border">
+                    <div class="card-header">
+                        <h2 id="myinfo-title" tabindex="-1" class="text-left m-0 p-0">Personal Information</h2>
+                    </div>
+    <div class="card-body bg-light border m-3 p-3">
+    <div class="form-content ">
+        <form>
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Name</div>
+                <div class="i-circle-wrapper">
+    <a id="namechange-icon" href="javascript:" data-toggle="popover"
+       role=""
+       data-html="true"
+       data-placement="bottom"
+       data-trigger="click"
+       data-content="To change your name on official records, complete a Change of Name form. You will need official documentation, such as a birth certificate or court order, in order to make the change. <a class='text-right d-block'  target='_blank' href='http://www.cmu.edu/hub/docs/name-change.pdf'>Change of Name Form</a>"
+       data-container="#namechange-icon"
+       title=""
+       class="cmu-popover ">
+        <span class="fas fa-info-circle info-icon "><span class="sr-only">Click for more info related to Name </span></span>
+    </a>
+                </div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Bocheng Wu
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Preferred Name</div>
+                <div class="i-circle-wrapper">
+    <a id="preferrednamechange-icon" href="javascript:" data-toggle="popover"
+       role=""
+       data-html="true"
+       data-placement="bottom"
+       data-trigger="click"
+       data-content="Your preferred name will be used for public facing services, such as Google Mail and the University Directory. Your preferred name will <strong>not</strong> be used on official documents, such as degree or enrollment verifications or transcripts and reporting financial matters. <a class='text-right d-block' target='_blank' href='https://www.cmu.edu/hub/registrar/student-identity/names.html'>Preferred Names</a>"
+       data-container="#preferrednamechange-icon"
+       title=""
+       class="cmu-popover ">
+        <span class="fas fa-info-circle info-icon "><span class="sr-only">Click for more info related to Preferred Name </span></span>
+    </a>
+                </div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Bocheng
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">As an Instructor</div>
+                <div class="i-circle-wrapper">
+    <a id="asaninstructor-icon" href="javascript:" data-toggle="popover"
+       role=""
+       data-html="true"
+       data-placement="bottom"
+       data-trigger="click"
+       data-content="Student instructors may choose to display their preferred name on websites where instructor names appear, such as the Schedule of Classes. <a class='text-right d-block' target='_blank' href='https://www.cmu.edu/hub/registrar/student-identity/names.html'>Preferred Name</a>"
+       data-container="#asaninstructor-icon"
+       title=""
+       class="cmu-popover ">
+        <span class="fas fa-info-circle info-icon "><span class="sr-only">Click for more info related to As an Instructor </span></span>
+    </a>
+                </div>
+        </div>
+        <div class="col-sm-8">
+                                    <ul class="fa-ul overflow-visible ml-4">
+    <li class="">
+        <span class="fa-li">
+            <i class="fas fa-times-circle text-danger"></i>
+        </span>
+            No, do not use my preferred name when displaying my instructor name, on both internal and external CMU websites, if I am listed as the instructor of a course-section.
+    </li>
+                    </ul>
+
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Birth Date</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        11 Sep 2001
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Directory Release</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Yes
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Mobile Phone</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        412-696-2078
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Mobile Provider</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Google Fi
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">CMU Alert</div>
+                <div class="i-circle-wrapper">
+    <a id="emergencyalert-icon" href="javascript:" data-toggle="popover"
+       role=""
+       data-html="true"
+       data-placement="bottom"
+       data-trigger="click"
+       data-content="Carnegie Mellon has automatically enrolled your mobile phone number in our emergency alert notification. If you elect to opt-out of these mobile phone notifications, you risk not receiving real-time notification on emergent situations that may affect you. We recommend that you keep at least one of these notifications active."
+       data-container="#emergencyalert-icon"
+       title=""
+       class="cmu-popover ">
+        <span class="fas fa-info-circle info-icon "><span class="sr-only">Click for more info related to CMU Alert </span></span>
+    </a>
+                </div>
+        </div>
+        <div class="col-sm-8">
+                                <ul class="fa-ul overflow-visible ml-4">
+    <li class="">
+        <span class="fa-li">
+            <i class="fas fa-check-square text-success"></i>
+        </span>
+            You are enrolled to receive emergency text notifications.
+    </li>
+
+    <li class="">
+        <span class="fa-li">
+            <i class="fas fa-check-square text-success"></i>
+        </span>
+            You are enrolled to receive emergency voice notifications.
+    </li>
+                </ul>
+
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Email</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        bochengw@andrew.cmu.edu
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Personal Email</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        wu5bocheng@gmail.com
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Sex Assigned at Birth</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Male
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">US Citizen</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        No
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">F1/J1 Student Status</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        Yes
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Fraternity</div>
+        </div>
+        <div class="col-sm-8">
+                <span >    --- <span class="sr-only">none</span>
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">Athletics</div>
+        </div>
+        <div class="col-sm-8">
+                <span >    --- <span class="sr-only">none</span>
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row ">
+        <div class="col-sm-4 pl-sm-0">
+            <div class="label-wrapper">VA Benefits</div>
+        </div>
+        <div class="col-sm-8">
+                <span >        No
+</span>
+        </div>
+    </div>
+
+    <div  class="form-group row row-plaintext">
+                <div class="col d-flex justify-content-end">
+        <a id="personalinfo-edit"
+           class="btn-primary btn "
+           href="/sio/mpa/myinfo/personalinfo/edit"
+           role="button"
+           
+        >
+    <div 
+         class=" ">
+        <span class="fas fa-edit fa-fw"
+                  aria-hidden="true"
+        ></span>
+            <span>Edit My Info</span>
+    </div>
+        </a>
+                </div>
+    </div>
+        </form>
+    </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>                        </div>
+                            <div role="region" aria-label="Tips"
+                                 class="col-lg-3 float-right d-sm-block order-12">
+    <div class="f-pnl d-print-none ">
+        <div class="f-pnl right-portal-col side-tips">
+        </div>
+    </div>
+                            </div>
+                        <div role="region" aria-label="Bottom Tips"
+                             class="float-left d-print-none col-lg-9">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer role="contentinfo" aria-label="Footer">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg-9 d-none d-lg-block">
+
+                    <div class="row pt-3 pb-1">
+                        <div class="col-4">
+                            <h2 class="pb-3 mb-n2  mt-n3">Quick Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.cmu.edu/hub/calendar/index.html"
+                                       target="_blank">Academic
+                                        Calendar</a></li>
+                                <li><a href="https://www.cmu.edu/canvas/" target="_blank">Canvas</a>
+                                </li>
+                                <li><a href="https://www.cmu.edu/directory-contact/index.html"
+                                       target="_blank">CMU
+                                        Directory</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cmu.edu/hub/consumer-information/index.html"
+                                       target="_blank">Consumer
+                                        Information</a></li>
+                                <li><a href="https://www.cmu.edu/dining/" target="_blank">Dining
+                                        Services</a></li>
+                                <li><a href="https://www.cmu.edu/hub/docs/final-exams.pdf"
+                                       target="_blank">Final
+                                        Exams</a></li>
+                                <li><a href="https://www.cmu.edu/housing/" target="_blank">Housing &
+                                        Residential
+                                        Education</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list-unstyled">
+                                <div aria-hidden="true"> &nbsp;</div>
+                                <li><a href="https://www.cmu.edu/hub/forms.html" target="_blank">HUB
+                                        Forms &
+                                        Documents</a></li>
+                                <li><a href="https://www.cmu.edu/idplus/" target="_blank">ID
+                                        Cards</a></li>
+                                <li><a href="https://www.cmu.edu/hub/MyPlaidStudent/index.html"
+                                       target="_blank">My
+                                        Plaid Student</a>
+                                </li>
+                                <li><a href="https://www.cmu.edu/oie/" target="_blank">Office of
+                                        International
+                                        Education</a></li>
+                                <li><a href="https://enr-apps.as.cmu.edu/open/SOC/SOCServlet"
+                                       target="_blank">Schedule
+                                        of
+                                        Classes</a></li>
+                                <li><a href="https://academicaudit.andrew.cmu.edu/" target="_blank">Stellic
+                                        Degree
+                                        Audit
+                                        Application</a></li>
+                                <li><a href="https://www.cmu.edu/student-affairs/" target="_blank">Student
+                                        Affairs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list-unstyled">
+                                <div aria-hidden="true"> &nbsp;</div>
+                                <li><a href="https://www.cmu.edu/sfs/" target="_blank">Student
+                                        Financial
+                                        Services</a></li>
+                                <li><a href="https://www.cmu.edu/hub/privacy/index.html"
+                                       target="_blank">Student
+                                        Privacy &amp;
+                                        FERPA</a></li>
+                                <li><a href="http://coursecatalog.web.cmu.edu/" target="_blank">Summer
+                                        Studies</a>
+                                </li>
+                                <li><a href="http://coursecatalog.web.cmu.edu/" target="_blank">Undergraduate
+                                        Catalog</a></li>
+                                <li><a href="https://www.cmu.edu/health-services/index.html"
+                                       target="_blank">University
+                                        Health
+                                        Services</a></li>
+                                <li><a href="https://www.cmu.edu/policies/" target="_blank">University
+                                        Policies</a>
+                                </li>
+                                <li><a href="https://www.cmu.edu/hub/registrar/index.html"
+                                       target="_blank">University
+                                        Registar's
+                                        Office</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-lg-right social mobile-left">
+                    Connect:
+                    <a class="pl-1" href="https://www.facebook.com/TheHUBatCMU/" target="blank"
+                       aria-label="Navigate to Facebook"><em class="fab fa-facebook-f"
+                                                             aria-hidden="true"></em></a>
+                    <a class="pl-1" href="https://twitter.com/thehubatcmu" target="blank"
+                       aria-label="Navigate to Twitter"><em
+                                class="fab fa-twitter"
+                                aria-hidden="true"></em></a>
+                    <hr/>
+                    <address>
+                        <span class="font-weight-bold">Student Information Online (SIO)</span><br/>
+                        Office of Enrollment Management<br/>
+                        5000 Forbes Avenue<br/>
+                        Pittsburgh, PA 15213<br/>
+                        <a class="footer-contact-us" href="https://www.cmu.edu/hub/contact/"
+                           target="_blank">Contact
+                            Us</a>
+                    </address>
+                </div>
+            </div>
+            <div class="row py-3 footer-links border-secondary border-top">
+                <div class="col-md-12">
+                    <p>
+                        <a class="border-secondary border-right pr-2"
+                           href="https://www.cmu.edu/legal/" target="_blank">Legal Info</a>
+                        <a class="pl-2" href="https://www.cmu.edu/" target="_blank">www.cmu.edu</a>
+                    </p>
+                    <p class="float-left"><strong>&copy; 2019 Carnegie Mellon University</strong>
+                    </p>
+                    <p class="float-right">
+                            Build: 82.8384 @ 02-May-2024 12:20:57 EDT
+
+                    </p>
+                </div>
+            </div>
+    </footer>
+</div> 
+</div>
+
+
+<div class="modal vertical-centered-modal" id="sessionWarningModal"
+     tabindex="-1" role="dialog" aria-labelledby="sessionWarningModalTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="sessionWarningModalMessagesDiv"></div>
+                <div id="sessionWarningModalBodyContentDiv">
+                    <span class="float-right" aria-label="Close">
+                            <img id="sessionWarningModalCornerCloseIcon" alt=" "
+                                 src="/sio/sio/images/close-button.jpg" class="gwt-Image modal-close-icon">
+                        </span>
+                    <h1 class="modal-title">Your session is about to expire</h1>
+                    <div class="txt">Your session will expire in <span id="sessionWarningModalSecondsLeft"></span> minutes.</div>
+                    <br/>
+                    <br/>
+                    <div class="txt">Click OK to keep your session alive for another <span id="sessionWarningModalMaxMinutes"></span>:00 minutes.</div>
+                    <div class="lineSpacer"></div>
+                    <div class="dialog-buttons">
+                        <button id="sessionWarningModalPingBtn" type="button" class="cmu-btn">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal vertical-centered-modal" id="sessionExpiredModal"
+     tabindex="-1" role="dialog" aria-labelledby="sessionExpiredModalTitle">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="sessionExpiredModalMessagesDiv"></div>
+                <div id="sessionExpiredModalBodyContentDiv">
+                    <span class="float-right" aria-label="Close">
+                            <img id="sessionExpiredModalCornerCloseIcon" alt=" "
+                                 src="/sio/sio/images/close-button.jpg" class="gwt-Image modal-close-icon">
+                        </span>
+                    <h1 class="modal-title">SIO session expired</h1>
+                    <div class="txt">As a security measure, your session ends after <span id="sessionExpiredModalMaxMinutes"></span>:00 minutes of inactivity.</div>
+                    <br/>
+                    <div class="txt">Click OK to begin a new session.</div>
+                    <div class="lineSpacer"></div>
+                    <div class="dialog-buttons">
+                        <button id="sessionExpiredModalReloadBtn" type="button" class="cmu-btn">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.jsConfig = {
+        'logging.enabled': 'false',
+        'contextPath': '/sio',
+        'buildUrlActions': ['addContext', 'addStickyParameters'],
+        'maxInactiveMinutes': 60
+    };
+</script>
+
+</body>
+
+</html>
